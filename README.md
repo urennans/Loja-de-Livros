@@ -24,29 +24,6 @@ Desenvolvedores
 
 A lógica de negócio e estrutura de classes foram preservadas, mas todo o domínio e funcionalidades foram reimplementados para o contexto de livraria.
 
-Loja de Livros/
-├── model/ # Classes de domínio (POJOs)
-│ ├── produto.py # Classe base abstrata
-│ ├── livro_fisico.py # Livros físicos
-│ ├── livro_digital.py # Livros digitais
-│ ├── livro_colecionavel.py # Livros colecionáveis
-│ ├── loja_virtual.py # Gerenciamento da loja
-│ └── vendas.py # Interface de vendas
-├── streams/ # Serialização personalizada
-│ ├── livro_output_stream.py # Serializador (Item 2)
-│ ├── livro_input_stream.py # Desserializador (Item 3)
-│ └── socket_stream.py # Adaptador para sockets
-├── server/ # Servidor TCP
-│ └── servidor_livros.py # Servidor multi-threaded
-├── client/ # Cliente TCP
-│ └── cliente_livros.py # Cliente de teste
-├── testes/ # Casos de teste
-│ ├── test_system_out.py # Teste com System.out
-│ ├── test_file_stream.py # Teste com arquivo
-│ ├── test_input_stream.py # Teste de leitura
-│ └── test_tcp.py # Teste completo TCP
-└── README.md # Este arquivo
-
  Como Executar
 
 1. Iniciar o Servidor
